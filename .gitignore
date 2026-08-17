@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# 生成与调试中间件，发布仓库只保留最终包和预览。
+build/
+assets/reference/
