@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  低分辨率 · 弱纹理 · 早期 CGI · 完整 Codex Pet 九状态动画
+  低分辨率 · 弱纹理 · 早期 CGI · Codex Pet v2 · 九状态动画 + 16 个注视方向
 </p>
 
 ## 30 秒安装
@@ -56,15 +56,28 @@ git clone https://github.com/siwei-yuan/niulai-codex-pet.git; cd niulai-codex-pe
 | 跳跃 | 原地蓄力、腾空、落地 |
 | 任务失败 | 低头、塌肩，陷入沉思 |
 | 等待输入 | 侧看、摊手，等你决定 |
-| 任务执行中 | 低头专注处理，手上一直没停 |
+| 后台任务执行中 | 低头专注处理，手上一直没停 |
 | 检查结果 | 前倾、眯眼、托腮审查 |
 
+Codex 当前会隐藏正在前台查看的任务状态；要看到“任务执行中”，请让任务在另一个 Codex 对话中后台运行。向左、向右奔跑由拖动桌宠触发；16 个注视方向由 Computer Use 自动化光标触发。
+
 <details>
-<summary><strong>查看完整九行精灵动画接触表</strong></summary>
+<summary><strong>查看完整 v2 十一行精灵动画接触表</strong></summary>
 
 ![牛来 Codex 桌宠完整动画接触表](previews/contact-sheet.png)
 
+[打开原始分辨率高清版](previews/contact-sheet-v2-hd.png)
+
 </details>
+
+## 宣传素材
+
+<p align="center">
+  <img src="social-media/niulai-actions/01-waving.png" width="23%" alt="牛来挥手宣传图" />
+  <img src="social-media/niulai-actions/02-running-right.png" width="23%" alt="牛来奔跑宣传图" />
+  <img src="social-media/niulai-actions/03-jumping.png" width="23%" alt="牛来跳跃宣传图" />
+  <img src="social-media/niulai-actions/04-working.png" width="23%" alt="牛来工作宣传图" />
+</p>
 
 ## 手动安装
 
@@ -85,11 +98,13 @@ ${CODEX_HOME:-$HOME/.codex}/pets/niulai/
 
 ## 技术信息
 
-- Codex Pet 官方协议尺寸：1536×1872
+- Codex Pet v2 协议尺寸：1536×2288
 - WebP + RGBA 透明通道
-- 8 列 × 9 行动画精灵表
+- 8 列 × 11 行动画精灵表
 - 未使用单元格全透明
 - 9 种完整 Codex 状态，共 57 帧
+- 1 个 neutral frame + 16 个顺时针注视方向
+- `spriteVersionNumber: 2`
 
 可选的本地验证：
 

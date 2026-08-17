@@ -20,18 +20,31 @@ def main() -> None:
         "id": "niulai",
         "displayName": "牛来",
         "description": "一头粗制滥造、表情严肃的金黄色牛来。",
+        "spriteVersionNumber": 2,
         "spritesheetPath": "spritesheet.webp",
     }
 
     with Image.open(SPRITESHEET_PATH) as spritesheet:
         assert spritesheet.format == "WEBP"
-        assert spritesheet.size == (1536, 1872)
+        assert spritesheet.size == (1536, 2288)
         assert spritesheet.mode == "RGBA"
 
         cell_width, cell_height = 192, 208
-        used_frames = (6, 8, 8, 4, 5, 8, 6, 6, 6)
+        # Row 0 contains six idle frames plus the dedicated neutral look frame.
+        # Rows 9-10 contain all 16 clockwise look directions.
+        used_frames = (7, 8, 8, 4, 5, 8, 6, 6, 6, 8, 8)
         alpha = spritesheet.getchannel("A")
         for row, used_count in enumerate(used_frames):
+            for column in range(used_count):
+                box = (
+                    column * cell_width,
+                    row * cell_height,
+                    (column + 1) * cell_width,
+                    (row + 1) * cell_height,
+                )
+                assert alpha.crop(box).getbbox() is not None, (
+                    f"used cell row={row} column={column} is empty"
+                )
             for column in range(used_count, 8):
                 box = (
                     column * cell_width,
