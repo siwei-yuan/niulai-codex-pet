@@ -4,14 +4,10 @@
   <img src="previews/jumping.gif" width="31%" alt="牛来跳跃" />
 </p>
 
-<h1 align="center">牛来，来到 Codex。</h1>
+<h1 align="center">牛来，来到 Codex</h1>
 
 <p align="center">
-  <strong>它会跑、会跳、会挥手。<br />你在干活，它在旁边一脸严肃地看着。</strong>
-</p>
-
-<p align="center">
-  低分辨率 · 弱纹理 · 早期 CGI · Codex Pet v2 · 九状态动画 + 16 个注视方向
+  <strong>匠心打造（保证全部 AI 生成），超多动作，保证时时都有惊喜（比电影里的动作或许都要多）。</strong>
 </p>
 
 ## 30 秒安装
@@ -48,19 +44,6 @@ git clone https://github.com/siwei-yuan/niulai-codex-pet.git; cd niulai-codex-pe
   <img src="previews/failed.gif" width="23%" alt="牛来失败" />
 </p>
 
-| Codex 状态 | 牛来的反应 |
-| --- | --- |
-| 待机 | 呼吸、眨眼，严肃站岗 |
-| 向左 / 向右移动 | 僵硬但很有力地赶路 |
-| 挥手 | 不苟言笑地跟你打招呼 |
-| 跳跃 | 原地蓄力、腾空、落地 |
-| 任务失败 | 低头、塌肩，陷入沉思 |
-| 等待输入 | 侧看、摊手，等你决定 |
-| 后台任务执行中 | 低头专注处理，手上一直没停 |
-| 检查结果 | 前倾、眯眼、托腮审查 |
-
-Codex 当前会隐藏正在前台查看的任务状态；要看到“任务执行中”，请让任务在另一个 Codex 对话中后台运行。向左、向右奔跑由拖动桌宠触发；16 个注视方向由 Computer Use 自动化光标触发。
-
 <details>
 <summary><strong>查看完整 v2 十一行精灵动画接触表</strong></summary>
 
@@ -69,15 +52,6 @@ Codex 当前会隐藏正在前台查看的任务状态；要看到“任务执�
 [打开原始分辨率高清版](previews/contact-sheet-v2-hd.png)
 
 </details>
-
-## 宣传素材
-
-<p align="center">
-  <img src="social-media/niulai-actions/01-waving.png" width="23%" alt="牛来挥手宣传图" />
-  <img src="social-media/niulai-actions/02-running-right.png" width="23%" alt="牛来奔跑宣传图" />
-  <img src="social-media/niulai-actions/03-jumping.png" width="23%" alt="牛来跳跃宣传图" />
-  <img src="social-media/niulai-actions/04-working.png" width="23%" alt="牛来工作宣传图" />
-</p>
 
 ## 手动安装
 
